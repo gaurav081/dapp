@@ -1,80 +1,55 @@
-# Build a Decentralized Voting Dapp with Next.js, TypeScript, Tailwind CSS, and CometChat
+Blockchain-Powered Freelance Platform.<br>
+Overview.<br>
+Welcome to our blockchain-powered freelance platform! Our platform directly links freelancers with clients, removing intermediaries while guaranteeing secure, transparent transactions. It also enables equitable dispute resolution and provides a seamless chat interface between freelancers and clients. Users can post multiple jobs and manage all their freelance projects in one place..<br>
 
-Read the full tutorial here: [**>> Build a Decentralized Voting Dapp with Next.js, TypeScript, Tailwind CSS, and CometChat**](https://daltonic.github.io)
+Features.<br>
+Decentralized Platform.<br>
+Direct Linkage: Connects freelancers and clients directly, eliminating the need for intermediaries and reducing associated costs..<br>
+Secure Transactions: Utilizes blockchain technology to ensure all transactions are secure and transparent..<br>
+Transparency: All transactions and agreements are recorded on the blockchain, providing a clear and immutable record..<br>
+Job Posting and Management.<br>
+Multiple Job Posting: Clients can post multiple jobs, and freelancers can apply for these jobs directly through the platform..<br>
+Communication.<br>
+Integrated Chat: Real-time chat functionality between freelancers and clients, facilitating clear and direct communication..<br>
+Dispute Resolution.<br>
+Equitable Resolution: Disputes between freelancers and clients are handled through a fair and transparent resolution process..<br>
+Blockchain Record: Dispute resolutions and agreements are recorded on the blockchain, ensuring all parties have access to an unbiased record..<br>
+Security.<br>
+Data Privacy: All user data is encrypted and stored securely, with blockchain ensuring data integrity..<br>
+Payment Security: Payments are handled through smart contracts, ensuring funds are released only when both parties meet agreed-upon milestones..<br>
+Note.<br>
 
-This example shows How to Build a Decentralized Voting Dapp with Next.js, TypeScript, Tailwind CSS, and CometChat:
+## 🚀 Quick Start for Live Demo (Sepolia Testnet)
 
-![Placing Bids](./screenshots/0.gif)
+The smart contract is deployed on Sepolia testnet at:
+**`0xB4E3fEAD0081316064537D8616B18c750A9e8D65`**
 
-<center><figcaption>Placing Bids</figcaption></center>
-
-![Paying out](./screenshots/1.gif)
-
-<center><figcaption>Paying out</figcaption></center>
-
-![One-on-One Chat](./screenshots/3.gif)
-
-<center><figcaption>One-on-One Chat</figcaption></center>
-
-## Technology
-
-This demo uses:
-
-- Metamask
-- Hardhat
-- Infuria
-- ReactJs
-- Tailwind CSS
-- Solidity
-- EthersJs
-- Faucet
-
-## Running the demo
-
-To run the demo follow these steps:
-
-1. Clone the project with the code below.
-
-   ```sh
-
-   # Make sure you have the above prerequisites installed already!
-   git clone https://github.com/Daltonic/P2E PROJECT_NAME
-   cd PROJECT_NAME # Navigate to the new folder.
-   yarn install # Installs all the dependencies.
+### Setup Steps:
+1. Navigate to the Dappworks directory:
+   ```bash
+   cd Dappworks
    ```
 
-2. Create a CometChat project, copy and paste your key in the spaces below.
-3. Update the `.env` file with the following details.
-   ```sh
-    REACT_APP_COMET_CHAT_APP_ID=<CometChat_APP_ID>
-    REACT_APP_COMET_CHAT_AUTH_KEY=<Comet_Chat_AUTH_KEY>
-    REACT_APP_COMET_CHAT_REGION=<CometChat_REGION>
-    REACT_APP_RPC_URL=<http://127.0.0.1:8545>
+2. Install dependencies:
+   ```bash
+   npm install
    ```
-4. Run the app using the following commands.
-   ```sh
-   yarn install
-   yarn hardhat node
-   yarn hardhat run scripts/deploy.js
+
+3. Start the application:
+   ```bash
+   npm start
    ```
-5. On another terminal, run `yarn start` to launch the project on the browser.
-6. Add some hardhat accounts, connect your wallet and interact with the app.
-   <br/>
 
-If your confuse about the installation, check out this **TUTORIAL** to see how you should run it.
+4. Connect MetaMask to Sepolia testnet and get test ETH from faucets
 
-Questions about running the demo? [Open an issue](https://github.com/Daltonic/P2E/issues). We're here to help ✌️
-Access the [Teaching Guide Here](https://docs.google.com/document/d/13bBRyAO0bEwRt776FXbYgWm6-OBFiUu6zTeOgRbXXyI/edit?usp=sharing).
+📖 **View on Etherscan**: https://sepolia.etherscan.io/address/0xB4E3fEAD0081316064537D8616B18c750A9e8D65
 
-## Useful links
+## 🛠️ Local Development
 
-- 🏠 [Website](https://dappmentors.org/)
-- ⚽ [Metamask](https://metamask.io/)
-- 🚀 [CometChat](https://try.cometchat.com/oj0s7hrm5v78)
-- 💡 [Hardhat](https://hardhat.org/)
-- 📈 [Infuria](https://infura.io/)
-- 🔥 [ReactJs](https://reactjs.org/)
-- 🐻 [Solidity](https://soliditylang.org/)
-- 👀 [EthersJs](https://docs.ethers.io/v5/)
-- 🎅 [Faucet](https://www.alchemy.com/faucets)
-- ✨ [Live Demo](https://dappworks.vercel.app/)
+For local development:
+```bash
+npm install
+npx hardhat node
+npx hardhat test
+npx hardhat run scripts/deploy.js
+```
